@@ -277,42 +277,15 @@ nav{
 }
 .scroll-btn i{
     font-size: 20px;
+    display: flex; /* Display by default */
 }
 
-/* Hide scroll button by default */
-.scroll-btn {
-    display: none;
-  }
-  
-  /* Show scroll button on iPad portrait mode */
-  @media only screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+/* Hide scroll button on smaller screens (including mobile devices) */
+@media only screen and (max-width: 768px) {
     .scroll-btn {
-      display: flex; /* Or any other suitable display property */
+      display: none; /* Hide on smaller screens */
     }
   }
-  
-  /* Show scroll button on larger Windows tablets */
-  @media only screen and (max-width: 1024px) and (max-height: 768px) and (min-width: 768px) {
-    .scroll-btn {
-      display: flex; /* Or any other suitable display property */
-    }
-  }
-  
-  /* Show scroll button on larger Android tablets */
-  @media only screen and (max-width: 1024px) and (max-height: 600px) and (min-width: 600px) {
-    .scroll-btn {
-      display: flex; /* Or any other suitable display property */
-    }
-  }
-  
-  /* Show scroll button on Windows desktop, Android devices, and larger screens */
-  @media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 1200px),
-  only screen and (min-width: 1025px) {
-    .scroll-btn {
-      display: flex; /* Or any other suitable display property */
-    }
-  }
-  
 /* ----- MAIN BOX ----- */
 .section{
     padding-block: 5em;
