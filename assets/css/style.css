@@ -281,7 +281,7 @@ nav{
 }
 
 /* Hide scroll button on smaller screens (including mobile devices) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-device-width: 768px) {
     .scroll-btn {
       display: none; /* Hide on smaller screens */
     }
