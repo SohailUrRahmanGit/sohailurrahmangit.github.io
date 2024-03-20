@@ -279,17 +279,24 @@ nav{
     font-size: 20px;
 }
 
-@media screen and (max-width: 768px) and (max-height: 1024px) {
-    /* iPad portrait mode */
+/* Hide scroll button on mobile devices */
+@media screen and (max-width: 767px) {
     .scroll-btn {
       display: none;
     }
   }
   
+  /* Hide scroll button on Windows tablets */
   @media screen and (max-width: 1024px) and (max-height: 768px) {
-    /* Windows tablet portrait mode */
     .scroll-btn {
       display: none;
+    }
+  }
+  
+  /* Show scroll button on iPad portrait mode */
+  @media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    .scroll-btn {
+      display: flex; /* Or any other suitable display property */
     }
   }
 /* ----- MAIN BOX ----- */
